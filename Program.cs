@@ -102,7 +102,7 @@ namespace Question2
         }
         public bool HasTriplet(int[] point)                             /*Function to check if there are 3 integers in the array*/
         {
-            if (A.Length >= 3)
+            if (point.Length >= 3)
             {
                 return true;
             }
