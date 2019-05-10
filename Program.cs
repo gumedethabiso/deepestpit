@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Question2
 {
@@ -20,7 +24,26 @@ namespace Question2
 
             int P = inx[0], Q = P, R;                                  /*initializing the points of the depth of the pit */
 
+            int down = -1;                                             /* this is the depth from the highest point*/
+            int upward = -1;                                           /* the lengty from the bottok of the pit*/
 
+            for (int x = 0; x < points.Length; x++ )                   
+            {                 
+                if (x + 1 >= points.Length)                            /* this loop prevents the occurance of an error when the slope reaches the lowest point */
+                {
+                    return upward;          
+                }
+            }
+
+            public bool HasTriplet(int[] point)                             /*Function to check if there are 3 integers in the array*/
+            {
+                if (A.Length >= 3)
+                {
+                    return true;
+                }
+
+                return false;
+            }
         }
 
     }
